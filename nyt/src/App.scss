@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+.nyt-container {
+  font-size: 12px;
+  width: 70em;
+  margin: 0 auto;
+
+  h1, h5, h6, p {
+    margin: 0em; //clear default browser settings
+  }
+
+  .nyt-singleArticle {
+    display: inline-flex;
+    padding: 1.2rem 0rem;
+    border-bottom: 1px solid #e2e2e2;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  .nyt-singleArticle__date {
+    min-width: 18%;
+    font-size: 11px;
+    line-height: 1em;
+    color: #999;
+    font-weight: 400;
+  }
+  .nyt-singleArticle__contents {
+    flex: 1;
+
+    h1, h6, p{
+      margin-right: 3rem;
+    }
+
+    .nyt-singleArticle__category {
+      font-size: 11px;
+      line-height: 1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .nyt-singleArticle__title,
+    .nyt-singleArticle__excerpt{
+      font-family: 'Merriweather', serif;
+
+    }
+
+    .nyt-singleArticle__title {
+      margin-top: 0.2rem;
+      font-size: 1.8em;
+    }
+    .nyt-singleArticle__excerpt {
+      margin-top: 0.6rem;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    .nyt-singleArticle__byline {
+      margin-top: 0.6rem;
+      color: #999;
+      .__name{
+        text-transform: uppercase;
+      }
+    }
+  }
+  .nyt-singleArticle__thumbnail {
+    width: 25%;
+
+    img.nyt-singleArticle__image{
+      width: 100%;
+      max-height: 8rem;
+      object-fit: cover;
+    }
+  }
+
+}

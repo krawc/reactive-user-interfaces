@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.nyt-container {
+  font-size: 12px;
+  width: 70em;
+  margin: 0 auto; }
+  .nyt-container h1, .nyt-container h5, .nyt-container h6, .nyt-container p {
+    margin: 0em; }
+  .nyt-container .nyt-singleArticle {
+    display: inline-flex;
+    padding: 1.2rem 0rem;
+    border-bottom: 1px solid #e2e2e2; }
+    .nyt-container .nyt-singleArticle:last-of-type {
+      border-bottom: none; }
+  .nyt-container .nyt-singleArticle__date {
+    min-width: 18%;
+    font-size: 11px;
+    line-height: 1em;
+    color: #999;
+    font-weight: 400; }
+  .nyt-container .nyt-singleArticle__contents {
+    flex: 1; }
+    .nyt-container .nyt-singleArticle__contents h1, .nyt-container .nyt-singleArticle__contents h6, .nyt-container .nyt-singleArticle__contents p {
+      margin-right: 3rem; }
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__category {
+      font-size: 11px;
+      line-height: 1em;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__title,
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__excerpt {
+      font-family: 'Merriweather', serif; }
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__title {
+      margin-top: 0.2rem;
+      font-size: 1.8em; }
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__excerpt {
+      margin-top: 0.6rem;
+      font-size: 1.1em;
+      line-height: 1.5; }
+    .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__byline {
+      margin-top: 0.6rem;
+      color: #999; }
+      .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__byline .__name {
+        text-transform: uppercase; }
+  .nyt-container .nyt-singleArticle__thumbnail {
+    width: 25%; }
+    .nyt-container .nyt-singleArticle__thumbnail img.nyt-singleArticle__image {
+      width: 100%;
+      max-height: 8rem;
+      object-fit: cover; }
