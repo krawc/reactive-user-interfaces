@@ -3,6 +3,9 @@
   font-size: 12px;
   width: 70em;
   margin: 0 auto; }
+  .nyt-container a {
+    color: #000;
+    text-decoration: none; }
   .nyt-container h1, .nyt-container h5, .nyt-container h6, .nyt-container p {
     margin: 0em; }
   .nyt-container .nyt-singleArticle {
@@ -36,7 +39,8 @@
     .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__excerpt {
       margin-top: 0.6rem;
       font-size: 1.1em;
-      line-height: 1.5; }
+      line-height: 1.5;
+      color: #464646; }
     .nyt-container .nyt-singleArticle__contents .nyt-singleArticle__byline {
       margin-top: 0.6rem;
       color: #999; }

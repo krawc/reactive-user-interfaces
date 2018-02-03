@@ -2,19 +2,49 @@ import React, { Component } from 'react';
 import './App.css';
 import Article from './Article';
 
+const API = 'https://api.nytimes.com/svc/mostpopular/v2/mostemailed/Arts/1.json?api-key=26860a1917d04048b9e56bad8f6dc7b0';
+
 class App extends Component {
+
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      articles: [],
+    };
+  }
+
+  componentDidMount() {
+      fetch(API)
+        .then(response => response.json())
+        .then(data => this.setState({ articles: data.results }));
+  }
+
+  componentWillUnmount() {
+    this.serverRequest.abort();
+  }
+
   render() {
+
+    const { articles } = this.state;
+
+
     return (
-      <div class="nyt-container">
-        <Article
-        articleDate="February 1, 2018"
-        articleCategory="The Shift"
-        articleTitle="Kodak's Dubious Blockchain Gamble"
-        articleExcerpt="An eon or two ago, Eastman Kodak was a bleeding-edge technology company. It hired the smartest engineers and put them to build a business that, at its peak, employed 145,000 people."
-        articleByline="Kevin Roose"
-        articleImage="https://static01.nyt.com/images/2018/01/30/business/30ROOSE-5/30ROOSE-5-jumbo.jpg?quality=100&auto=webp"
-        />
+      <div className="nyt-container">
+          {articles.map(article =>
+              <Article
+              articleUrl={article.url}
+              articleDate={article.published_date}
+              articleCategory={article.section}
+              articleTitle={article.title}
+              articleExcerpt={article.abstract}
+              articleByline={article.byline}
+              articleImage={article.media ? article.media[0]['media-metadata'][2]['url'] : 'http://www.barkbark.com/wp-content/uploads/nyt-01-01.svg'}
+              />
+          )}
       </div>
+
     );
   }
 }
