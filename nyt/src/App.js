@@ -15,20 +15,21 @@ class App extends Component {
     };
   }
 
+  //if the API request is successful
   componentDidMount() {
       fetch(API)
         .then(response => response.json())
         .then(data => this.setState({ articles: data.results }));
   }
 
+  //in case of an error
   componentWillUnmount() {
     this.serverRequest.abort();
   }
 
   render() {
 
-    const { articles } = this.state;
-
+    const { articles } = this.state; //get the articles info JSON for rendering
 
     return (
       <div className="nyt-container">

@@ -4,16 +4,13 @@
   font-size: 12px;
   width: 70em;
   margin: 0 auto;
-
   a {
     color: #000;
     text-decoration: none;
   }
-
   h1, h5, h6, p {
-    margin: 0em; //clear default browser settings
+    margin: 0em; //clear default browser margins
   }
-
   .nyt-singleArticle {
     display: inline-flex;
     padding: 1.2rem 0rem;
@@ -22,7 +19,6 @@
       border-bottom: none;
     }
   }
-
   .nyt-singleArticle__date {
     min-width: 18%;
     font-size: 11px;
@@ -32,11 +28,9 @@
   }
   .nyt-singleArticle__contents {
     flex: 1;
-
     h1, h6, p{
       margin-right: 3rem;
     }
-
     .nyt-singleArticle__category {
       font-size: 11px;
       line-height: 1em;
@@ -44,13 +38,10 @@
       font-weight: 500;
       letter-spacing: 1px;
     }
-
     .nyt-singleArticle__title,
     .nyt-singleArticle__excerpt{
       font-family: 'Merriweather', serif;
-
     }
-
     .nyt-singleArticle__title {
       margin-top: 0.2rem;
       font-size: 1.8em;
@@ -71,12 +62,10 @@
   }
   .nyt-singleArticle__thumbnail {
     width: 25%;
-
     img.nyt-singleArticle__image{
       width: 100%;
       max-height: 8rem;
       object-fit: cover;
     }
   }
-
 }
