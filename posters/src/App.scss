@@ -1,0 +1,53 @@
+* {
+  outline: 0;
+}
+.App {
+  margin: 2em auto;
+  width: 50em;
+  display: flex;
+  .inputs {
+    flex: 0 0 40%;
+    padding-right: 3em;
+    .Input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5em;
+      label {
+        color: #9b9b9b;
+        font-size: 0.9em;
+      }
+      input {
+        border: 0px;
+        border-bottom: 1px solid #9b9b9b;
+        font-size: 1em;
+        color: #4a4a4a;
+        line-height: 2em;
+        padding: 0px;
+      }
+    }
+  }
+  .outputs {
+    flex: 0 0 60%;
+    height: 40em;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    overflow: hidden;
+    .Output {
+      &.title {
+        font-size: 6em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        flex: 1;
+      }
+      &.info {
+        padding: 0.5em 0em;
+        font-family: Courier, monospace;
+        font-size: 1.3em;
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   render() {
-    var children = this.state.childrenData.map(function(childData,childIndex) {
+    var children = this.state.childrenData.map(function(childData) {
         return <Button isActive={this.state.current == childData.childText ? 'active' : 'inactive'} onClick={this.handleChildClick.bind(null,childData)} buttonText={childData.childText}/>
     }.bind(this));
     var result = 'You have selected: ' + this.state.current;

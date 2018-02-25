@@ -2,21 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 import Article from './Article';
 
-const API = 'https://api.nytimes.com/svc/mostpopular/v2/mostemailed/Arts/1.json?api-key=26860a1917d04048b9e56bad8f6dc7b0';
+const NAMES = ['Arts', 'Books', 'Education', 'Food', 'Multimedia', 'Opinion', 'T Magazine'];
+
 
 class App extends Component {
 
-
   constructor(props) {
     super(props);
-
     this.state = {
+      current: NAMES[0],
       articles: [],
     };
   }
 
+  apiCall(){
+    return 'https://api.nytimes.com/svc/mostpopular/v2/mostemailed/' + this.state.current + '/1.json?api-key=26860a1917d04048b9e56bad8f6dc7b0'
+  }
+
   //if the API request is successful
   componentDidMount() {
+      let API = this.apiCall();
       fetch(API)
         .then(response => response.json())
         .then(data => this.setState({ articles: data.results }));
