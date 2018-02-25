@@ -12,7 +12,7 @@ class App extends Component {
     this.onTimeChange = this.onTimeChange.bind(this);
 
     this.state = {
-      title: 'Title',
+      title: 'Event Name',
       location: 'Location',
       time: 'Time',
       inputs: [
