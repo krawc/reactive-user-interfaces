@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+.Home {
+  #myID {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  .project-links {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .project-link {
+      margin: 0.7em 0em;
+      a {
+        padding: 0.2em 0.5em;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        font-family: Roboto Mono, monospace;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+
+.Project {
+  transition: transform 0.5s, opacity 0.5s;
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    &.textRight {
+      .mainText-container {
+        order: 2;
+      }
+    }
+  }
+  .blackOnWhite,
+  .blackOnWhite * {
+    color: #000;
+    background: #fff;
+  }
+  .whiteOnBlack,
+  .whiteOnBlack * {
+    color: #fff;
+    background: #000;
+  }
+  &.transition-appear {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+
+    &.transition-appear.transition-appear-active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    &.transition-leave {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.transition-leave.transition-leave-active {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  .mainText-container {
+    flex: 0 0 50%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    .mainText-title,
+    .mainText-excerpt {
+      text-align: center;
+    }
+    .mainText-title {
+      font-family: Roboto Mono, monospace;
+      margin: 0.2em 0em;
+      font-size: 2.5em;
+    }
+    .mainText-excerpt {
+      font-family: Helvetica, sans-serif;
+      -webkit-transform: scale(1.2,1);
+      width: 77%;
+      margin: 0.4em auto;
+      padding: 0% 3%;
+      text-align: justify;
+      text-align-last: center;
+    }
+
+  }
+  .thumbnail-container {
+    .thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

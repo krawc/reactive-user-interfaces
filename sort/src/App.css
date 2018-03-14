@@ -1,0 +1,26 @@
+.Feed {
+  margin: 0 auto;
+  width: 37.5em; }
+  .Feed .tweet-container {
+    display: inline-flex;
+    background: #f5f5f5;
+    padding: 1em 1.5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.03), 0 3px 6px rgba(0, 0, 0, 0.05);
+    margin-top: 0.5em;
+    width: 100%;
+    align-content: center; }
+    .Feed .tweet-container .tweet-contents {
+      padding-left: 0.5em; }
+      .Feed .tweet-container .tweet-contents h2, .Feed .tweet-container .tweet-contents p {
+        margin: 0px; }
+      .Feed .tweet-container .tweet-contents h2 {
+        font-weight: 300;
+        line-height: 1.3em; }
+      .Feed .tweet-container .tweet-contents p {
+        color: #aaa;
+        font-size: 0.8em; }
+    .Feed .tweet-container .tweet-avatar {
+      width: 3em;
+      height: 3em; }
+      .Feed .tweet-container .tweet-avatar img {
+        width: 100%; }

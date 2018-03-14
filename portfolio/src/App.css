@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+.Home {
+  width: 100vw;
+  height: 100vh;
+  display: flex; }
+  .Home #myID {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; }
+  .Home .project-links {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .Home .project-links .project-link {
+      margin: 0.7em 0em; }
+      .Home .project-links .project-link a {
+        padding: 0.2em 0.5em;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        font-family: Roboto Mono, monospace;
+        font-size: 1.2em; }
+
+.Project {
+  transition: transform 0.5s, opacity 0.5s; }
+  .Project .slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex; }
+    .Project .slide.textRight .mainText-container {
+      order: 2; }
+  .Project .blackOnWhite,
+  .Project .blackOnWhite * {
+    color: #000;
+    background: #fff; }
+  .Project .whiteOnBlack,
+  .Project .whiteOnBlack * {
+    color: #fff;
+    background: #000; }
+  .Project.transition-appear {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  .Project.transition-appear.transition-appear-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+  .Project.transition-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+  .Project.transition-leave.transition-leave-active {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  .Project .mainText-container {
+    flex: 0 0 50%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    display: flex; }
+    .Project .mainText-container .mainText-title,
+    .Project .mainText-container .mainText-excerpt {
+      text-align: center; }
+    .Project .mainText-container .mainText-title {
+      font-family: Roboto Mono, monospace;
+      margin: 0.2em 0em;
+      font-size: 2.5em; }
+    .Project .mainText-container .mainText-excerpt {
+      font-family: Helvetica, sans-serif;
+      -webkit-transform: scale(1.2, 1);
+      width: 77%;
+      margin: 0.4em auto;
+      padding: 0% 3%;
+      text-align: justify;
+      text-align-last: center; }
+  .Project .thumbnail-container .thumbnail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+/*# sourceMappingURL=App.css.map */
