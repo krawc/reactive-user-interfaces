@@ -1,0 +1,29 @@
+
+
+.Footer .footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.2em;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #dadada; }
+  .Footer .footerLinks .footerLink-wrap {
+    width: 20%;
+    border-right: 1px solid #dadada;
+    box-sizing: border-box; }
+    .Footer .footerLinks .footerLink-wrap:last-of-type {
+      border-right: 0px; }
+    .Footer .footerLinks .footerLink-wrap a {
+      color: #868686;
+      font-weight: 300;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column; }
+    .Footer .footerLinks .footerLink-wrap i {
+      font-size: 1.8em; }
+    .Footer .footerLinks .footerLink-wrap span {
+      font-size: 0.6em; }

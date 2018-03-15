@@ -1,0 +1,8 @@
+
+
+.ContactList {
+  background: #fff;
+  height: 93vh;
+  overflow: scroll; }
+  .ContactList .contacts-list {
+    padding: 0em 1em; }

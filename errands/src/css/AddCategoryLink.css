@@ -1,0 +1,16 @@
+
+
+.AddCategoryLink {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex: 0 0 98%;
+  flex: 0 0 98%;
+  margin: 1%;
+  border-radius: 5px;
+  background: #ffffff; }
+  .AddCategoryLink p {
+    font-size: 1.4em;
+    color: #aaa; }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/AddCategoryLink.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 class AddCategoryLink extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/ContactList.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Footer from './Footer.js';
 import SingleContact from './SingleContact.js';
@@ -15,8 +15,8 @@ class ContactList extends Component {
         if(a.contact_name > b.contact_name) return 1;
         return 0;
     })
-    let allContacts = contactsOrdered.map((contact) => {
-      return <SingleContact theContact={contact}/>;
+    let allContacts = contactsOrdered.map((contact, i) => {
+      return <SingleContact key={i} theContact={contact}/>;
     });
     return (
       <div className={classes}>

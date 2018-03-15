@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/AddCategory.css';
 import { Redirect, BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import ReactSwipe from 'react-swipe';
 import Footer from './Footer.js';

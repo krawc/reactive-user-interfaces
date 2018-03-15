@@ -73,12 +73,12 @@ class App extends Component {
         {contact_name: 'Ana', category_name: 'doctor', phone:'13162377235', location:'Jinqiao', email: 'here@example.com'},
         {contact_name: 'Mr Zhang', category_name: 'bank', phone:'13162377235', location:'Shanghai', email: 'here@example.com'},
         {contact_name: 'BA', category_name: '', phone:'13162377235', location:'London', email: 'here@example.com'},
-        {contact_name: '快递1', category_name: 'delivery', phone:'13162377235', location:'LA', email: 'here@example.com'},
-        {contact_name: '快递2', category_name: 'delivery', phone:'13162377235', location:'NYC', email: 'here@example.com'},
-        {contact_name: '快递3', category_name: 'delivery', phone:'13162377235', location:'Tokyo', email: 'here@example.com'},
-        {contact_name: 'Ana', category_name: 'doctor', phone:'13162377235', location:'Warsaw', email: 'here@example.com'},
-        {contact_name: 'Mr Zhang', category_name: 'bank', phone:'13162377235', location:'Budapest', email: 'here@example.com'},
-        {contact_name: 'BA', category_name: '', phone:'13162377235', location:'Paris', email: 'here@example.com'}
+        {contact_name: '快递4', category_name: 'delivery', phone:'13162377235', location:'LA', email: 'here@example.com'},
+        {contact_name: '饿了么', category_name: 'delivery', phone:'13162377235', location:'NYC', email: 'here@example.com'},
+        {contact_name: '鞋子', category_name: 'delivery', phone:'13162377235', location:'Tokyo', email: 'here@example.com'},
+        {contact_name: 'Dr Scott', category_name: 'doctor', phone:'13162377235', location:'Warsaw', email: 'here@example.com'},
+        {contact_name: 'Wang Peng', category_name: 'bank', phone:'13162377235', location:'Budapest', email: 'here@example.com'},
+        {contact_name: 'Paris Hilton', category_name: '', phone:'13162377235', location:'Paris', email: 'here@example.com'}
       ],
       classes: 'small',
     }
@@ -107,7 +107,7 @@ class App extends Component {
 
     const categories = this.state.categories.map((category, i) => {
       return (
-        <CategoryLink category_name={category.category_name} icon={category.icon} color={category.color}/>
+        <CategoryLink  key={i} category_name={category.category_name} icon={category.icon} color={category.color}/>
       );
     });
 

@@ -1,0 +1,39 @@
+
+.categories {
+  display: flex;
+  width: 98vw;
+  margin: 1%;
+  flex-wrap: wrap; }
+
+.Category {
+  flex: 0 0 98%;
+  margin: 1%; }
+  .Category .CategoryLink {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative; }
+    .Category .CategoryLink .Category-icon {
+      font-size: 2em;
+      margin: auto 0.8em; }
+    .Category .CategoryLink .Category-name {
+      align-self: center;
+      font-size: 1.4em;
+      font-weight: 300;
+      margin: 1em; }
+  .Category .contacts-list {
+    max-height: 0px;
+    margin: 0;
+    margin-top: -5px;
+    padding: 5px 1.5em 0em;
+    font-weight: 300;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 0;
+    overflow: scroll;
+    transition: max-height 0.2s ease-in-out; }
+  .Category.active .contacts-list {
+    max-height: calc(12em - 1px); }

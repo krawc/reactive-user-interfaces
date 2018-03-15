@@ -1,0 +1,36 @@
+
+.Search {
+  background: #fff; }
+  .Search .search-wrap {
+    width: 90%;
+    padding: 5%; }
+  .Search input.search {
+    width: 100%;
+    line-height: 2em;
+    font-size: 1.5em;
+    text-align: center;
+    border: 0px;
+    border-bottom: 1px solid #bbb;
+    font-weight: 300; }
+  .Search .locationTags p {
+    font-weight: 300;
+    text-align: center; }
+  .Search .locationTags .locationTag {
+    background: #e1f6ff;
+    font-size: 16px;
+    border: 1px solid #efefef;
+    margin: 0px 5px 5px 0px;
+    height: 32px;
+    border-radius: 5px;
+    line-height: 1em;
+    padding: 0em 1em; }
+  .Search.active .locationTags {
+    display: none; }
+  .Search .contacts-list {
+    padding: 0em; }
+  .Search .close {
+    display: none;
+    font-size: 40px;
+    text-align: center; }
+  .Search.active .close {
+    display: block; }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/Search.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Footer from './Footer.js';
 import SingleContact from './SingleContact.js';
@@ -62,11 +62,11 @@ class Search extends Component {
       );
     }
 
-    let allLocations = contactsOrdered.map((contact) => {
-        return <input type="button" className="locationTag" value={contact.location} onClick={this.onTagClick}></input>;
+    let allLocations = contactsOrdered.map((contact, i) => {
+        return <input key={i} type="button" className="locationTag" value={contact.location} onClick={this.onTagClick}></input>;
     });
 
-    let allContacts = contactsOrdered.map((contact) => {
+    let allContacts = contactsOrdered.map((contact, i) => {
       if (this.state.search !== '') {
         return <SingleContact theContact={contact}/>;
       }

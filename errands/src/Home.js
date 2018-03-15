@@ -30,7 +30,7 @@ class Home extends Component {
         return contact.category_name.match(category.slug);
       });
       return (
-        <CategoryLink contactList={contacts} active={isActive} onClick={this.onCatChange} category_name={category.category_name} slug={category.slug} icon={category.icon} color={category.color}/>
+        <CategoryLink  key={i} contactList={contacts} active={isActive} onClick={this.onCatChange} category_name={category.category_name} slug={category.slug} icon={category.icon} color={category.color}/>
       );
     });
 

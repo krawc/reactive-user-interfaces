@@ -1,0 +1,21 @@
+
+
+.Header {
+  background-color: #dadada;
+  color: #fff;
+  display: flex;
+  width: 100%; }
+  .Header .Header-title {
+    margin: 0;
+    padding: 0.2em;
+    font-family: Gloria Hallelujah, sans-serif;
+    width: 100%;
+    text-align: center; }
+  .Header .Header-addContact {
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    font-size: 1.3em;
+    background: transparent;
+    border: 0px; }

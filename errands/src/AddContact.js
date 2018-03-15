@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/AddContact.css';
 import { Redirect, BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import ReactSwipe from 'react-swipe';
 import Footer from './Footer.js';
@@ -38,7 +38,7 @@ class AddContact extends Component {
 
     const cat_options = this.props.categories.map((cat, i) => {
       return (
-        <option value={cat.slug}>{cat.category_name}</option>
+        <option key={i} value={cat.slug}>{cat.category_name}</option>
       );
     });
 
