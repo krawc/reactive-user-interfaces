@@ -23,6 +23,8 @@ slides : {
 */
 
 class Project extends Component {
+
+
   render() {
 
     const slides = this.props.slides.map(function(slide, idx) {
@@ -38,6 +40,14 @@ class Project extends Component {
             </div>
             <div className="thumbnail-container">
               <img className="thumbnail-img" src={slide.image}/>
+
+            {slide.video ? (
+              <video autoPlay muted controls className="thumbnail-img">
+                <source src={slide.video} type="video/mp4"/>
+              </video>
+            ) : (
+              <div></div>
+            )}
             </div>
           </div>
         );
